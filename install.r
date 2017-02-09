@@ -103,7 +103,7 @@ from.github(lib=path,"skranz/dplyrExtras",ref = "master")
 from.github(lib=path,"skranz/dbmisc",ref = "master")
 #from.github(lib=path,"skranz/rowmins",ref = "master", overwrite=!TRUE)
 
-from.github(lib=path,"skranz/shinyEvents",ref = "develop")
+from.github(lib=path,"skranz/shinyEvents",ref = "master")
 from.github(lib=path,"skranz/shinyEventsUI",ref = "master")
 from.github(lib=path,"skranz/shinyEventsLogin",ref = "master")
 
@@ -119,3 +119,9 @@ print(failed)
 
 cat("\n\nSuccessfully installed:\n")
 print(success)
+
+txt = paste0("\n\nFailed installations:\n", paste0(failed, collapse=", "))
+
+try({
+  writeLines(txt,"~/r-install.log")
+})
