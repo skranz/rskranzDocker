@@ -120,7 +120,11 @@ print(failed)
 cat("\n\nSuccessfully installed:\n")
 print(success)
 
-txt = paste0("\n\nFailed installations:\n", paste0(failed, collapse=", "))
+txt = paste0(
+  "Installation Time ", as.character(Sys.time()),
+  "\n\nFailed installations:\n", paste0(failed, collapse=", "),
+  "\n\nSuccessful installations:\n", paste0(success, collapse=", ")
+)
 
 try({
   writeLines(txt,"~/r-install.log")
