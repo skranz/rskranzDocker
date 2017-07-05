@@ -66,7 +66,7 @@ from.cran("shinyjs",lib = path)
 
 from.cran("V8",lib = path)
 #from.cran("rJava",lib = path)
-from.cran("mailR",dep=TRUE, lib=path)
+#from.cran("mailR",dep=TRUE, lib=path)
 
 #from.cran("shiny",lib = path)
 from.cran("shinyBS",lib = path)
@@ -105,7 +105,7 @@ from.github(lib=path,"skranz/dbmisc",ref = "master")
 
 from.github(lib=path,"skranz/shinyEvents",ref = "master")
 from.github(lib=path,"skranz/shinyEventsUI",ref = "master")
-from.github(lib=path,"skranz/shinyEventsLogin",ref = "master")
+#from.github(lib=path,"skranz/shinyEventsLogin",ref = "master")
 
 
 #from.github(lib=path,"skranz/loginPart",ref = "master")
