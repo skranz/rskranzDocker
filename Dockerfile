@@ -21,5 +21,5 @@ RUN apt-get update \
 #RUN Rscript /tmp/install.r
 
 # copy and run package installation file
-COPY install_mailR.r /tmp/install_mailR.r
-RUN Rscript /tmp/install_mailR.r
+#COPY install_mailR.r /tmp/install_mailR.r
+#RUN Rscript /tmp/install_mailR.r
