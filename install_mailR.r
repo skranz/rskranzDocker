@@ -50,8 +50,8 @@ from.github = function(pkg, lib = path, ref="master", overwrite = glob.overwrite
 
 
 from.cran("rJava",lib = path)
-from.cran("mailR",dep=TRUE, lib=path)
-from.github(lib=path,"skranz/shinyEventsLogin",ref = "master")
+#from.cran("mailR",dep=TRUE, lib=path)
+#from.github(lib=path,"skranz/shinyEventsLogin",ref = "master")
 
 
 #from.github(lib=path,"skranz/loginPart",ref = "master")

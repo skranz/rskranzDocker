@@ -17,9 +17,9 @@ RUN apt-get update \
   default-jdk \
   && R CMD javareconf
 
+COPY install.r /tmp/install.r
+RUN Rscript /tmp/install.r
+
 # copy and run package installation file
 COPY install_mailR.r /tmp/install_mailR.r
 RUN Rscript /tmp/install_mailR.r
-
-COPY install.r /tmp/install.r
-RUN Rscript /tmp/install.r
