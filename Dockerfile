@@ -13,8 +13,8 @@ RUN export ADD=shiny && bash /etc/cont-init.d/add
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   libv8-3.14-dev \
-#  r-cran-rjava  
   default-jdk \
+  r-cran-rjava  \
   && R CMD javareconf
 
 COPY install.r /tmp/install.r
