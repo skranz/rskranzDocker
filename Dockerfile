@@ -10,7 +10,8 @@ MAINTAINER Sebastian Kranz "sebastian.kranz@uni-ulm.de"
 
 RUN export ADD=shiny && bash /etc/cont-init.d/add
 
-RUN apt-get install -y \
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
   default-jre \
   libv8-3.14-dev
 
