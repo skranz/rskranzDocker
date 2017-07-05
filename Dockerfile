@@ -12,7 +12,7 @@ RUN export ADD=shiny && bash /etc/cont-init.d/add
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-  libv8-3.14-dev \ 
+  libv8-3.14-dev 
 
 ## gnupg is needed to add new key
 RUN apt-get install -y gnupg2
