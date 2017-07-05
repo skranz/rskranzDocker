@@ -65,7 +65,7 @@ from.cran("shinyjs",lib = path)
 ## apt-get install libv8-dev
 
 from.cran("V8",lib = path)
-from.cran("rJava",lib = path)
+#from.cran("rJava",lib = path)
 from.cran("mailR",dep=TRUE, lib=path)
 
 #from.cran("shiny",lib = path)
