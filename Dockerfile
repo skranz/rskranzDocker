@@ -14,7 +14,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   libv8-3.14-dev \
 #  r-cran-rjava  
-  openjdk-7-jdk \
+  default-jdk \
   && R CMD javareconf
 
 # copy and run package installation file
