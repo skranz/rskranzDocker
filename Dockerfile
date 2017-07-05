@@ -12,7 +12,7 @@ RUN export ADD=shiny && bash /etc/cont-init.d/add
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-  libv8-3.14-dev \
+  libv8-3.14-dev \ 
 #  openjdk-7-jdk \
   r-cran-rjava  
 #  && R CMD javareconf
@@ -21,5 +21,5 @@ RUN apt-get update \
 #RUN Rscript /tmp/install.r
 
 # copy and run package installation file
-#COPY install_mailR.r /tmp/install_mailR.r
-#RUN Rscript /tmp/install_mailR.r
+COPY install_mailR.r /tmp/install_mailR.r
+RUN Rscript /tmp/install_mailR.r
