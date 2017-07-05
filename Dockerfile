@@ -14,8 +14,8 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   libv8-3.14-dev \
 #  openjdk-7-jdk \
-  r-cran-rjava  \
-  && R CMD javareconf
+  r-cran-rjava  
+#  && R CMD javareconf
 
 #COPY install.r /tmp/install.r
 #RUN Rscript /tmp/install.r
