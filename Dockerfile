@@ -12,9 +12,11 @@ RUN export ADD=shiny && bash /etc/cont-init.d/add
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-  r-cran-rjava \
-  libv8-3.14-dev
+  libv8-3.14-dev \
+  r-cran-rjava  
+#  openjdk-7-jdk \
+#  && R CMD javareconf
 
 # copy and run package installation file
-COPY install.r /tmp/install.r
-RUN Rscript /tmp/install.r
+#COPY install.r /tmp/install.r
+#RUN Rscript /tmp/install.r
