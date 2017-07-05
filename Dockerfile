@@ -17,8 +17,8 @@ RUN apt-get update \
   r-cran-rjava  \
   && R CMD javareconf
 
-COPY install.r /tmp/install.r
-RUN Rscript /tmp/install.r
+#COPY install.r /tmp/install.r
+#RUN Rscript /tmp/install.r
 
 # copy and run package installation file
 COPY install_mailR.r /tmp/install_mailR.r
