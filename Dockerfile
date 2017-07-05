@@ -18,5 +18,5 @@ RUN apt-get update \
 #  && R CMD javareconf
 
 # copy and run package installation file
-#COPY install.r /tmp/install.r
-#RUN Rscript /tmp/install.r
+COPY install.r /tmp/install.r
+RUN Rscript /tmp/install.r
