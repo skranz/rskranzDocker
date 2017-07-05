@@ -61,10 +61,10 @@ from.cran("formatR",lib = path)
 
 #from.cran("knitr",lib = path)
 from.cran("shinyjs",lib = path)
-from.cran("V8",lib = path)
 #from.cran("rmarkdown", lib=path)
 ## apt-get install libv8-dev
 
+from.cran("V8",lib = path)
 from.cran("rJava",lib = path)
 from.cran("mailR",dep=TRUE, lib=path)
 
