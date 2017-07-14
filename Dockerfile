@@ -8,7 +8,14 @@ FROM rocker/tidyverse
 
 MAINTAINER Sebastian Kranz "sebastian.kranz@uni-ulm.de"
 
+## running with "-e ADD=shiny" adds shiny server
+COPY add_shiny_skranz.sh /etc/cont-init.d/add
+
 RUN export ADD=shiny && bash /etc/cont-init.d/add
+
+# Use manual shiny-server configuration
+COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
+RUN chmod 644 /etc/shiny-server/shiny-server.conf
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
