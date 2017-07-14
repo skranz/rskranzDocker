@@ -9,7 +9,7 @@ FROM rocker/tidyverse
 MAINTAINER Sebastian Kranz "sebastian.kranz@uni-ulm.de"
 
 ## running with "-e ADD=shiny" adds shiny server
-COPY add_shiny_skranz.sh /etc/cont-init.d/add
+COPY add_shiny.sh /etc/cont-init.d/add
 
 RUN export ADD=shiny && bash /etc/cont-init.d/add
 
