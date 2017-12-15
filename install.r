@@ -58,7 +58,7 @@ from.cran("roxygen2", lib=path)
 from.cran("DT",lib = path)
 from.cran("formatR",lib = path)
 #from.cran("dplyr",lib = path)
-
+ 
 #from.cran("knitr",lib = path)
 from.cran("shinyjs",lib = path)
 #from.cran("rmarkdown", lib=path)
