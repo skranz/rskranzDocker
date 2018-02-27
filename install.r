@@ -87,6 +87,8 @@ from.cran("texreg", lib=path)
 from.cran("lmtest", lib=path)
 from.cran("DescTools", lib=path)
 
+from.cran("officer", lib=path)
+
 #from.cran("tidyr",lib=path)
 
 
